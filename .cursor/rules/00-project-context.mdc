@@ -1,0 +1,9 @@
+---
+alwaysApply: true
+---
+# Project context — Holdyfoldy
+- Read docs/05-architecture.md before any structural change; it is the contract.
+- Stack: Flutter (Dart), fl_chart, Riverpod, backend proxy for all quotes, PostgreSQL/Supabase.
+- All market data goes through the proxy — never call providers from the app.
+- Never log absolute dollar values in analytics. Money = integer minor units or Decimal.
+- Keep changes small; one task at a time; update docs when decisions change.
